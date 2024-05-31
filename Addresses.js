@@ -1,0 +1,16 @@
+const addresses = {
+  31: {
+    swapRouter: "0x1042393300587e1e46f0f870e3d759a9a2f5fc8e",
+    quoterV2: "0xd5206f47b5c05f604ee63b3406733e3f0276cd99",
+    NFTPositionManager: "0x232975be3CA939a1ae46F5543D5852c61Ac562B4",
+    tickLens: "0x098902E79282EAa3750CF644a64901f93607d223",
+    V3Factory: "0x620A7a8b8Aa10D48F8aB7d5094E45762EC4DDf5D",
+  },
+  31337: {
+    V3Factory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",
+    NFTPositionManager: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88",
+    swapRouter: "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D",
+  },
+};
+
+module.exports = addresses;

@@ -15,8 +15,11 @@ const ROOTSTALK_API_KEY = process.env.ROOTSTALK_API_KEY || "Your API key";
 
 const BLOCKSCOUTE_API_KEY =
   process.env.BLOCKSCOUTE_API_KEY || "Your etherscan API key";
-const PRIVATE_KEY = process.env.PRIVATE_KEY;
-console.log("A", ROOTSTALK_API_KEY, PRIVATE_KEY);
+
+const MAINNET_RPC_URL =
+  process.env.MAINNET_RPC_URL ||
+  process.env.ALCHEMY_MAINNET_RPC_URL ||
+  "https://eth-mainnet.alchemyapi.io/v2/your-api-key";
 
 module.exports = {
   defaultNetwork: "hardhat",
@@ -24,7 +27,10 @@ module.exports = {
     hardhat: {
       allowUnlimitedContractSize: true,
       chainId: 31337,
-      blockGasLimit: 100000000, // Set your desired gas limit here
+      forking: {
+        url: MAINNET_RPC_URL,
+        blockNumber: 19987722,
+      },
     },
     root: {
       url: ROOTSTALK_API_KEY || "",

@@ -1,8 +1,8 @@
 const { anyValue } = require("@nomicfoundation/hardhat-chai-matchers/withArgs");
 const { expect } = require("chai");
 const { ethers, deployments } = require("hardhat");
-
-describe("Lock", function () {
+const addresses = require("../Addresses");
+describe("Pool", function () {
   let Test;
   beforeEach(async () => {
     accounts = await ethers.getSigners(); // could also do with getNamedAccounts
@@ -19,6 +19,8 @@ describe("Lock", function () {
     await tx.wait();
 
     const num = await Test.num();
-    console.log(`The num is ${num}`);
+    // console.log(`The num is ${num}`);
+    // console.log(addresses[31].V3Factory);
   });
+  it("can create a pool", async () => {});
 });

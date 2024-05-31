@@ -9,7 +9,7 @@ module.exports = async function ({ getNamedAccounts, deployments }) {
   log("------------------------------------------------------------");
   let args = [];
 
-  const Test = await deploy("Test", {
+  const Manager = await deploy("Manager", {
     from: deployer,
     args: args,
     log: true,
@@ -18,7 +18,7 @@ module.exports = async function ({ getNamedAccounts, deployments }) {
 
   if (chainId != 31337) {
     log("Verifying...");
-    await verify(Test.address, args, "contracts/Test:Test.sol");
+    await verify(Manager.address, args, "contracts/Manager:Manager.sol");
   }
 };
-module.exports.tags = ["Test", "Need", "Local"];
+module.exports.tags = ["Manager", "Need", "Local"];
