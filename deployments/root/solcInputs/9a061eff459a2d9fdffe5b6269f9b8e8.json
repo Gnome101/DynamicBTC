@@ -1,0 +1,39 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/Test.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.24;\n\n// Uncomment this line to use console.log\n// import \"hardhat/console.sol\";\n\ncontract Test {\n    uint public num;\n\n    function changeNum(uint256 x) public {\n        num = x;\n    }\n}\n"
+    }
+  },
+  "settings": {
+    "evmVersion": "cancun",
+    "optimizer": {
+      "enabled": true,
+      "runs": 1,
+      "details": {
+        "yul": true
+      }
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}

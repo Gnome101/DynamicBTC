@@ -1,0 +1,82 @@
+{
+  "address": "0xfD0A5D2a40e8B0Cf243CF04D3d55862b57e1a329",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "x",
+          "type": "uint256"
+        }
+      ],
+      "name": "changeNum",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "num",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x16009842942cb043ccb35b02ffb3c0f983db59ae2e0e101f82198ee706f62578",
+  "receipt": {
+    "to": null,
+    "from": "0xa91100312fFc485f3deAaeC457Fd930bCDe6a6e4",
+    "contractAddress": "0xfD0A5D2a40e8B0Cf243CF04D3d55862b57e1a329",
+    "transactionIndex": 1,
+    "gasUsed": "90189",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x9cb551dda97df50ff787513352f1320bf50cee64785627d03e5380f0e0378d20",
+    "transactionHash": "0x16009842942cb043ccb35b02ffb3c0f983db59ae2e0e101f82198ee706f62578",
+    "logs": [],
+    "blockNumber": 5176011,
+    "cumulativeGasUsed": "150170",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "9a061eff459a2d9fdffe5b6269f9b8e8",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.24+commit.e11b9ed9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"x\",\"type\":\"uint256\"}],\"name\":\"changeNum\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"num\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/Test.sol\":\"Test\"},\"evmVersion\":\"cancun\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":1},\"remappings\":[]},\"sources\":{\"contracts/Test.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.24;\\n\\n// Uncomment this line to use console.log\\n// import \\\"hardhat/console.sol\\\";\\n\\ncontract Test {\\n    uint public num;\\n\\n    function changeNum(uint256 x) public {\\n        num = x;\\n    }\\n}\\n\",\"keccak256\":\"0xba7879a18a7f73a1c516db261ebc364c2422110903d5815c0a191d9ddf027def\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x6080604052348015600e575f80fd5b5060aa8061001b5f395ff3fe6080604052348015600e575f80fd5b50600436106030575f3560e01c80632b3113371460345780634e70b1dc146045575b5f80fd5b6043603f366004605e565b5f55565b005b604c5f5481565b60405190815260200160405180910390f35b5f60208284031215606d575f80fd5b503591905056fea2646970667358221220abc3fe6b0e9c882c7f082cb2a84743d8fec2cb2fe0c9cd111471c9daa73b0ba964736f6c63430008180033",
+  "deployedBytecode": "0x6080604052348015600e575f80fd5b50600436106030575f3560e01c80632b3113371460345780634e70b1dc146045575b5f80fd5b6043603f366004605e565b5f55565b005b604c5f5481565b60405190815260200160405180910390f35b5f60208284031215606d575f80fd5b503591905056fea2646970667358221220abc3fe6b0e9c882c7f082cb2a84743d8fec2cb2fe0c9cd111471c9daa73b0ba964736f6c63430008180033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 3,
+        "contract": "contracts/Test.sol:Test",
+        "label": "num",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_uint256"
+      }
+    ],
+    "types": {
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}
